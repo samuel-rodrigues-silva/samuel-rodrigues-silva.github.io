@@ -236,15 +236,12 @@ footer{
     width: 8.33%;
 }
 
-@media(max-width: 500px){
+@media (max-width: 500px){
 
-    #nav_menu{
-        background-color: red;
-    }
 
     .container{
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 1%;
+        margin-right: 1%;
         overflow: hidden;
     }
 
@@ -256,6 +253,14 @@ footer{
         display: none;
     }
 
+    .opening_games_content{
+        margin-left: 5px;
+    }
+
+    #olimpic_date{
+        margin-left: 5px;
+        font-size: 5px;
+    }
     #tickets{
         overflow-x: auto;
     }
