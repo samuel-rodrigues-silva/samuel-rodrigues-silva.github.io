@@ -238,7 +238,7 @@ footer{
 
 @media (min-width: 400px){
 
-    body{
+    #nav_menu{
         background-color: red;
     }
 
