@@ -236,7 +236,7 @@ footer{
     width: 8.33%;
 }
 
-@media(max-width: 768px){
+@media (min-width: 320px){
 
     .container{
         margin-left: 5%;
