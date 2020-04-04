@@ -236,7 +236,7 @@ footer{
     width: 8.33%;
 }
 
-@media(max-width: 300px){
+@media(max-width: 500px){
 
     #nav_menu{
         background-color: red;
