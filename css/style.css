@@ -239,7 +239,7 @@ footer{
 @media (max-width: 500px){
 
     #nav-menu{
-        margin-right: 2px;
+        margin-right: 4px;
     }
     .container{
         margin-left: 1%;
@@ -260,7 +260,7 @@ footer{
     }
 
     #olimpic_date{
-        margin-left: 5px;
+        display:none;
     }
     #tickets{
         overflow-x: auto;
