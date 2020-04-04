@@ -238,7 +238,7 @@ footer{
 
 @media (max-width: 500px){
 
-    #nav-menu{
+    #nav_menu{
         margin-right: 4px;
     }
     .container{
@@ -259,7 +259,7 @@ footer{
         margin-left: 6px;
     }
 
-    #olimpic_date{
+    #opening_date{
         display:none;
     }
     #tickets{
