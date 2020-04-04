@@ -236,11 +236,15 @@ footer{
     width: 8.33%;
 }
 
-@media (min-width: 320px){
+@media (min-width: 400px){
+
+    body{
+        background-color: red;
+    }
 
     .container{
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
         overflow: hidden;
     }
 
