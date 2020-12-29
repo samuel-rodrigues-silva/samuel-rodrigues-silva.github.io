@@ -1,106 +1,202 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olimpiadas 2020</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="js/index.js"></script>
+
+    <title>Samuel Silva</title>
+
 </head>
 <body>
-    
-    <header id="main_navbar_menu">
-            <div class="row">
-                <div class="col-12">
-                    <div id="logo">
-                        <img id="olp_logo" src="image/logo.png" alt="olimpic brand logo">
+
+        <header class='header' >
+            <div class="container-fluid">
+                <div class="row" >
+                    <div id="header-content">
+                        <div class="col-xl-8 align-self-center">
+                            <div id="main-header-content" class="text-white">
+                                <small>Get Every Single solution</small>
+                                <h1>I'm Developer</h1>
+                                <p>My name is Samuel Silva, Web Developer and your personal free lancer</p>
+                                <div id="btn-content">
+                                    <button class='btn border-rounded' id="btn-learn">Learn More</button>
+                                    <button class='btn border-rounded' type="button" id="btn-hire">Hire me</button>
+                                </div>      
+                            </div>
+                        </div>
+                        <div class="col-4 align-self-center">
+                             <div id="img-header" class="rounded-circle">
+                               <!-- <img src="./img/samuel-removebg-preview.png" id="main-img" class="img-fluid mb-2" alt="">-->
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+
+        
+
+        <section>
+            <div id="sidebar-link">
+                <div class="link">
+                    <a href="https://www.linkedin.com/in/samuel-silva-2b5651197/"><i class="fab fa-linkedin display-5"></i></a>
+                </div>
+                <div class="link">
+                    <a href="https://github.com/samuel-rodrigues-silva" style="color: #000000;"><i class="fab fa-github display-5" ></i></a>
+                </div>
+            </div>
+            <!-- INTRODUCTION CONTENT - PRESENTATION -->
+            <div class="container-fluid p-5" id="main-content">
+                <div class="row text-center">
+                    <div class="col-xl-12 col-12 text-center">
+                        <h2>Hi</h2>
+                        <p>My name is Samuel Silva - 23 year old, degreed in IT, living in Brazil which is my native country. Passionate for Technology and software development, i'll be glad to make part and contribiute to your inovation </p> 
+                   </div>
+                </div>
+
+            </div>
+            <!-- SKILLS CONTENT -->
+            <div class="container p-5" id="skill-content">
+                <h2 class=text-center>
+                    My Skills
+                </h2>
+                <!-- ROW SKILLS-->
+                <div class="row p-5 d-flex justify-content-around ">
+                    <div class="col-xl-6">
+                        <div class="row d-flex justify-content-around break">
+                            <div class="col-xl-2 col-12">
+                                <i class="fab fa-react display-5"></i>
+                            </div>
+                            <div class="col-xl-9 col-12">
+                                <p>Front-end development with React</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="row d-flex justify-content-around break">
+                            <div class="col-xl-2 col-12">
+                                <i class="fab fa-php display-5"></i>
+                            </div>
+                            <div class="col-xl-9 col-12 align-self-center">
+                                <p>Database solutions with PHP</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row p-5 d-flex justify-content-around ">
+                    <div class="col-xl-6">
+                        <div class="row d-flex justify-content-around break">
+                            <div class="col-xl-2 col-12">
+                                <img src="img/mysql.png" class="tech-img display-5" alt="">
+                            </div>
+                            <div class="col-xl-9 col-12">
+                                <p>Relational Database with MySQL</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="row d-flex justify-content-around break">
+                            <div class="col-xl-2 col-12">
+                                <i class="fab fa-js display-5"></i>
+                            </div>
+                            <div class="col-xl-9 col-12">
+                                <p>Javascript as main development langague</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row p-5 d-flex justify-content-around">
+                    <div class="col-xl-6">
+                        <div class="row d-flex justify-content-around break">
+                            <div class="col-xl-2 col-12">
+                                <img src="img/mongo.png" class="tech-img display-5" alt="">
+                            </div>
+                            <div class="col-xl-9 col-12">
+                                <p>Medium knowlegde manipulating Mongo database</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="row d-flex justify-content-around break">
+                            <div class="col-xl-2 col-12">
+                                <i class="fab fa-node display-5"></i>
+                            </div>
+                            <div class="col-xl-9 col-12">
+                                <p>Web Database productions with Node.js API REST</p> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav>
-                    <ul id="nav_menu">
-                        <li class="item"><a href="index.html">Home</a></li>
-                        <li class="item"><a href="sports.html">Esportes</a></li>
-                        <li class="item"><a href="jogos.html">Jogos</a></li>
-                        <li class="item"><a href="ingressos.html">Ingressos</a></li>
-                        <li class="item"><a href="mascotes.html">Mascotes</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-    </header>
-
-    <div id="img_home">
-        <div class="row">
-            <div class="col-12">
-                <img id="img_national_stadium" src="image/national_stadium.jpg" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div id="opening_date">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <h2>JOGOS OLÍMPICOS -- </h2>
-                </div>
-                <div class="col-7">
-                    <h2 id="olimpic_date"> 22 de Julho - 9 de Agosto</h2>
-                </div>
-                <div class="col-1">
-                    <img id="olimpic_games_img" src="image/olimpic_games.png" alt="">
-                
+            <div class="container">
+                <div class="row">
+                    <h3 class="text-center">Institutions</h3>
+                    <div class="col-12 d-flex justify-content-between break"> 
+                        <div>
+                            <img src="img/senac.png" class="img-fluid img-inst" alt="">
+                        </div>
+                        <div>
+                            <img src="img/senai.png" class="img-fluid img-inst" alt="">
+                        </div>
+                        <div>
+                            <img src="img/univas.png" class="img-fluid img-inst" alt="">
+                        </div>
+                    </div>  
                 </div>
             </div>
-        </div>
-    </div>
+
+            <div class="container">
+                <div class="row mt-5 text-center" >
+                    <h2 class="text-center mb-4">Language</h2>
+                    <div class="col-12 d-flex justify-content-around break">
+                            <div class="align-self-center">
+                                <h3>English</h3>
+                                <small>Advanced</small>
+                                <div class="lang border border-danger border-4 rounded-circle m-4">
+                                
+                                </div>
+                            </div>
+                            
+                            <div class="align-self-center">
+                                <h3>Portuguese</h3>
+                                <small>Native</small>
+                                <div class="lang-br border border-success rounded-circle border-4 m-4">
+                               
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer bg-dark text-white" >
+            <div class="container">
+                <div class="row" >
+                    <div class="col-12 d-flex justify-content-around flex-column">
+                    <div class="text-center"><i class="fab fa-whatsapp p-2"></i> Pouso Alegre - 35 9 9727-8910</div>
+                        <div class="text-center"><i class="fa fa-envelope p-2" ></i> Samuka_55@hotmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 id="opening_games_title">Abertura dos Jogos Olimpicos</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3"><img src="image/torch_carrying.png" alt=""></div>
-                <div class="col-9 opening_games_content">
-                    <p>Revezamento da tocha - 26 de Março de 2020 -  Fukushima</p>
-                    <p>Inicio dos Jogos 24 de Julho de 2020 - Venues</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-5 sports_video_entrance">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/W5Vbqq3UQDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            </section>
-
-
-    <footer>
-        <div id="footer_content" class="container">
-            <div class="row">
-                <div class="col-12">
-                    <span> Jogos Olímpicos de verão / Jogos Paraolímpicos de Verão - Tokyo </span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <a href="https://www.instagram.com/tokyo2020/" target="blank"><i class="fab fa-instagram icon" id="instagram"></i></a>
-                    <a href="https://www.facebook.com/tokyo2020/" target="blank"><i class="fab fa-facebook icon" id="facebook"></i></a>
-                    <a href="https://www.youtube.com/tokyo2020" target="blank"><i class="fab fa-youtube icon" id="youtube"></i></a>
-                    <a href="https://twitter.com/Tokyo2020" target="blank"><i class="fab fa-twitter icon" id="twitter"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
