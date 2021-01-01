@@ -103,9 +103,9 @@ button{
 }
 
 #sidebar-link{
-    position: sticky;
-    top : 0;
-    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .link{
@@ -186,6 +186,8 @@ footer i, span{
     #img-content-header{
         float: right;
         margin-bottom: 40px;
+        margin-top: -200px;
+        margin-right: -45px ;
     }
 
 }
