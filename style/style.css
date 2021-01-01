@@ -162,6 +162,10 @@ footer i, span{
 
 @media screen and (max-width : 660px){
 
+    #sidebar-link{
+        margin-left: 50px;
+    }
+
     body {
         overflow-x: hidden;
     }
@@ -180,9 +184,9 @@ footer i, span{
         flex-direction: column;
     }
 
-    #img-header{
-        margin: auto;
+    #img-content-header{
+        float: right;
+        margin-bottom: 40px;
     }
-
 
 }
