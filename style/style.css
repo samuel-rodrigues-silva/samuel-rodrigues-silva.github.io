@@ -161,9 +161,8 @@ footer i, span{
 }
 
 @media screen and (max-width : 660px){
-
-    #sidebar-link{
-        margin-left: 50px;
+    body{
+        padding: 0;
     }
 
     body {
