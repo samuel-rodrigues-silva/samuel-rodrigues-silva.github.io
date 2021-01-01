@@ -7,7 +7,7 @@
 
         let btnHire = document.getElementById('btn-hire');
         btnHire.addEventListener('click' , () => {
-         window.scrollTo(0,2000)
+         window.scrollTo(0,5000)
         }) 
 
 }
