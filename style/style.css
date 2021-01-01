@@ -33,7 +33,12 @@ p{
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
+#contact-content{
+    float: inline-start;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
 li{
     cursor: pointer;
 }
@@ -131,8 +136,19 @@ button{
 
 footer{
     margin-top: 10vh;
-    padding: 10vh;
+    padding: 3vh;
 }
+
+footer i, span{
+    color: #919192;
+}
+
+.link-footer{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
 @media screen and (max-width : 1267px){
 
    #btn-learn {
