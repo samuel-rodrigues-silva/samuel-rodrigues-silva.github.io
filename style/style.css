@@ -2,18 +2,18 @@
 
 
 html{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif;
 }
 
 body{
     padding: 0;
     margin: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif;
     background-color: #fafafa;
 }
 
 h2,h3{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif;
     color: black;
 }
 
@@ -105,13 +105,14 @@ button{
 #sidebar-link{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
 }
 
 .link{
-    width: 80px;
-    height: 80px;
-    margin: 50px;
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 0 0;
+    float:left;
 }
 
 .lang{
@@ -161,6 +162,7 @@ footer i, span{
 }
 
 @media screen and (max-width : 660px){
+
     body{
         padding: 0;
     }
@@ -184,10 +186,7 @@ footer i, span{
     }
 
     #img-content-header{
-        float: right;
-        margin-bottom: 40px;
-        margin-top: -200px;
-        margin-right: -45px ;
+        display:none
     }
 
 }
