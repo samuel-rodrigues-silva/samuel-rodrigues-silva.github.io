@@ -33,6 +33,16 @@ export const Dashboard = () => {
           <input type='text' name='contact' placeholder='Enter Email Message' />
           <span>Copyright reserved 2023</span>
         </div>
+        <div className='Dashboard__menu__dot-column'>
+          {Array(120)
+            .fill(0)
+            .map((_) => (
+              <>
+                <div>__</div>
+                <div>_</div>
+              </>
+            ))}
+        </div>
       </div>
       <div className='Dashboard__content'>
         <Outlet></Outlet>

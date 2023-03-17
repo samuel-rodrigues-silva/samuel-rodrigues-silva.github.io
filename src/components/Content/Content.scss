@@ -1,5 +1,12 @@
 .Content {
-  padding: 0 100px;
-  margin: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
   color: #fff;
+  width: 70%;
+  height: 1000px;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

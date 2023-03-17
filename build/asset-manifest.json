@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.96ad757d.css",
-    "main.js": "/static/js/main.b25726b3.js",
+    "main.css": "/static/css/main.fc1e4abe.css",
+    "main.js": "/static/js/main.3e705b2e.js",
     "static/js/787.fdb3145b.chunk.js": "/static/js/787.fdb3145b.chunk.js",
+    "static/media/me.jpeg": "/static/media/me.a095f31b37f68d5c0ab9.jpeg",
+    "static/media/react.png": "/static/media/react.f3e576ba08e6be927148.png",
+    "static/media/angular.png": "/static/media/angular.7494ce3e4a9a47eee16f.png",
+    "static/media/ionic.png": "/static/media/ionic.43defda9753ef6b1efcb.png",
+    "static/media/redux.svg": "/static/media/redux.9193f87d9fb1a83636f0b1bc5924b361.svg",
     "index.html": "/index.html",
-    "main.96ad757d.css.map": "/static/css/main.96ad757d.css.map",
-    "main.b25726b3.js.map": "/static/js/main.b25726b3.js.map",
+    "static/media/flutter.svg": "/static/media/flutter.37714be1d821c702368c08604cd38fc4.svg",
+    "main.fc1e4abe.css.map": "/static/css/main.fc1e4abe.css.map",
+    "main.3e705b2e.js.map": "/static/js/main.3e705b2e.js.map",
     "787.fdb3145b.chunk.js.map": "/static/js/787.fdb3145b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96ad757d.css",
-    "static/js/main.b25726b3.js"
+    "static/css/main.fc1e4abe.css",
+    "static/js/main.3e705b2e.js"
   ]
 }
