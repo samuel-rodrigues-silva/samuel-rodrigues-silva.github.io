@@ -1,21 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.fc1e4abe.css",
-    "main.js": "/static/js/main.3e705b2e.js",
+    "main.css": "/static/css/main.e488ca94.css",
+    "main.js": "/static/js/main.69532843.js",
     "static/js/787.fdb3145b.chunk.js": "/static/js/787.fdb3145b.chunk.js",
-    "static/media/me.jpeg": "/static/media/me.a095f31b37f68d5c0ab9.jpeg",
+    "static/media/flower_offer.png": "/static/media/flower_offer.254a01b88dd3c7c9d571.png",
+    "static/media/flower_header.png": "/static/media/flower_header.33630bbd2e80a7567565.png",
+    "static/media/myself5.png": "/static/media/myself5.461cd513474de1630288.png",
+    "static/media/calendar_login.png": "/static/media/calendar_login.eb2c7552568d28efc08c.png",
+    "static/media/stars_header.png": "/static/media/stars_header.cc6b9bb10e3cfeeb218e.png",
+    "static/media/code.jpg": "/static/media/code.b716953df44508fc666c.jpg",
+    "static/media/agenda_card.png": "/static/media/agenda_card.04020b283ccd4e87754c.png",
+    "static/media/stars_section.png": "/static/media/stars_section.60a4f73d53bba5369715.png",
+    "static/media/agenda_timeline.png": "/static/media/agenda_timeline.00cf11b51607d1a4dd6b.png",
+    "static/media/calendar_home.png": "/static/media/calendar_home.fefb1dc47be2a9723003.png",
     "static/media/react.png": "/static/media/react.f3e576ba08e6be927148.png",
     "static/media/angular.png": "/static/media/angular.7494ce3e4a9a47eee16f.png",
     "static/media/ionic.png": "/static/media/ionic.43defda9753ef6b1efcb.png",
-    "static/media/redux.svg": "/static/media/redux.9193f87d9fb1a83636f0b1bc5924b361.svg",
     "index.html": "/index.html",
+    "static/media/ngrx.svg": "/static/media/ngrx.935250522bfcbc538ee0668914660eba.svg",
+    "static/media/redux.svg": "/static/media/redux.9193f87d9fb1a83636f0b1bc5924b361.svg",
     "static/media/flutter.svg": "/static/media/flutter.37714be1d821c702368c08604cd38fc4.svg",
-    "main.fc1e4abe.css.map": "/static/css/main.fc1e4abe.css.map",
-    "main.3e705b2e.js.map": "/static/js/main.3e705b2e.js.map",
+    "main.e488ca94.css.map": "/static/css/main.e488ca94.css.map",
+    "main.69532843.js.map": "/static/js/main.69532843.js.map",
     "787.fdb3145b.chunk.js.map": "/static/js/787.fdb3145b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc1e4abe.css",
-    "static/js/main.3e705b2e.js"
+    "static/css/main.e488ca94.css",
+    "static/js/main.69532843.js"
   ]
 }
