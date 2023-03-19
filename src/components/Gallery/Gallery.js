@@ -11,13 +11,13 @@ export const Gallery = () => {
             <div
               className='Gallery__img-container__1'
               style={{
-                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.1)) ,url(${data.image})`,
+                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)) ,url(${data.image})`,
               }}
             ></div>
             <div
               className='Gallery__img-container__2'
               style={{
-                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.1)) ,url(${data.image2})`,
+                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)) ,url(${data.image2})`,
               }}
             ></div>
           </div>

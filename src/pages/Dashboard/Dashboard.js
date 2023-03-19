@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { AiOutlineClose } from 'react-icons/ai';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Outlet, Link, useLocation } from 'react-router-dom';
@@ -10,6 +11,7 @@ import './Dashboard.scss';
 
 export const Dashboard = () => {
   const [tab, setTab] = useState('home');
+  const [isMenuOpened, setIsMenuOpened] = useState(false);
   const menu = useRef();
   const location = useLocation();
 
@@ -17,16 +19,28 @@ export const Dashboard = () => {
     setTab(location.pathname);
   }, [tab, location]);
 
-  const handleMenu = useCallback(() => {}, []);
+  const handleMenu = useCallback(() => {
+    if (window.innerWidth <= 820) {
+      setIsMenuOpened((prevState) => !prevState);
+      menu.current.classList.toggle('showMenu');
+      menu.current.classList.remove('hideMenu');
+    }
+  }, []);
 
   return (
     <div className='Dashboard'>
-      <div className='Dashboard__menu'>
+      <div className='Dashboard__menu' ref={menu}>
+        {isMenuOpened && (
+          <div className='Dashboard__menu__close' onClick={handleMenu}>
+            <AiOutlineClose></AiOutlineClose>
+          </div>
+        )}
         <ul className='Dashboard__menu__list'>
           <div className='Dashboard__menu__list__container'>
             <Link
               to='/'
               className='Dashboard__menu__list__container__item'
+              onClick={handleMenu}
               style={{
                 color: tab === '/' ? 'var(--warning)' : 'rgba(255,255,255,0.8)',
               }}
@@ -38,6 +52,7 @@ export const Dashboard = () => {
             <Link
               to='/gallery'
               className='Dashboard__menu__list__container__item'
+              onClick={handleMenu}
               style={{
                 color:
                   tab === '/gallery'
@@ -52,6 +67,7 @@ export const Dashboard = () => {
             <Link
               to='contact'
               className='Dashboard__menu__list__container__item'
+              onClick={handleMenu}
               style={{
                 color:
                   tab === '/contact'
@@ -104,11 +120,7 @@ export const Dashboard = () => {
         </div>
       </div>
       <div className='Dashboard__content'>
-        <div
-          className='Dashboard__content__hamb'
-          ref={menu}
-          onClick={handleMenu}
-        >
+        <div className='Dashboard__content__hamb' onClick={handleMenu}>
           <GiHamburgerMenu></GiHamburgerMenu>
         </div>
         <Outlet></Outlet>

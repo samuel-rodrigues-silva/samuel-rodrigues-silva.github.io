@@ -1,3 +1,12 @@
+@keyframes slideIn {
+  0% {
+    width: 25%;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+
 .Dashboard {
   width: 100vw;
   height: 100vh;
@@ -23,10 +32,9 @@
 
     &__list {
       list-style-type: none;
-      padding: 3em 3em;
 
       &__container {
-        margin-block: 12px;
+        margin-block: 15px;
         &__item {
           color: rgba(255, 255, 255, 0.8);
           text-decoration: none;
@@ -123,6 +131,29 @@
   .Dashboard {
     &__menu {
       display: none;
+
+      &__list {
+        &__container {
+          &__item {
+            margin-right: 30px;
+          }
+        }
+      }
+
+      &__close {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+      }
+
+      &__contact {
+        &__social {
+          justify-content: center;
+        }
+        &__flags {
+          justify-content: center;
+        }
+      }
     }
 
     &__content {
@@ -140,4 +171,16 @@
       }
     }
   }
+}
+
+.showMenu {
+  animation: slideIn 1s ease;
+  display: block;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  z-index: 9;
 }

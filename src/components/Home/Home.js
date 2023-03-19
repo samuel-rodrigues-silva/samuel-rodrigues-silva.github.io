@@ -7,7 +7,9 @@ export const Home = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    window.addEventListener('resize', () => {
+      setWidth(window.innerWidth);
+    });
 
     const startAnimation = (entries, _) => {
       entries.forEach((entry) => {
