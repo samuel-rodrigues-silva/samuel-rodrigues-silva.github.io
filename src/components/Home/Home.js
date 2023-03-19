@@ -1,15 +1,46 @@
+import React, { useEffect, useState } from 'react';
 import { DATA } from '../../common/data/home';
 import { Content } from '../Content/Content';
 import './Home.scss';
 
 export const Home = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+
+    const startAnimation = (entries, _) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle('appear', entry.isIntersecting);
+      });
+    };
+
+    const observer = new IntersectionObserver(startAnimation);
+    const options = { root: null, rootMargin: '0px', threshold: 1 };
+
+    const elements = document.querySelectorAll('.Card__info');
+    elements.forEach((el) => {
+      observer.observe(el, options);
+    });
+  }, [width]);
+
   return (
     <Content>
       {DATA.map((data, index) => (
         <div key={data.id} className='Card'>
-          {index % 2 === 0 && <Image src={data.image} />}
-          <CardInfo data={data} />
-          {index % 2 !== 0 && <Image src={data.image} />}
+          {width > 800 && (
+            <React.Fragment>
+              {index % 2 === 0 && <Image src={data.image} />}
+              <CardInfo data={data} />
+              {index % 2 !== 0 && <Image src={data.image} />}
+            </React.Fragment>
+          )}
+          {width < 800 && (
+            <React.Fragment>
+              <Image src={data.image} />
+              <CardInfo data={data} />
+            </React.Fragment>
+          )}
         </div>
       ))}
     </Content>

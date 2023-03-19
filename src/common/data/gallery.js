@@ -10,19 +10,17 @@ import flower_offer from '../../common/assets/flower_offer.png';
 export const DATA = [
   {
     id: 1,
-    title: 'this&that',
-    label: 'Agenda',
-    description:
-      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.',
+    title: 't&t Agenda ',
+    label: 'this&that',
+    description: `High editable agenda timeline for equitable and fluid conversations. A user conversation laboratory enhancing business and meetings target point.`,
     image: agenda_card,
     image2: agenda_timeline,
   },
   {
     id: 2,
-    title: 'this&that',
-    label: 'Calendar',
-    description:
-      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.',
+    title: 't&t Calendar',
+    label: 'this&that',
+    description: `Real time calendar for scheduled meetings and important events. A user calendar integrated with this&that agenda providing your personal email informations.`,
     image: calendar_login,
     image2: calendar_home,
   },
@@ -30,17 +28,15 @@ export const DATA = [
     id: 3,
     title: 'five5stars',
     label: 'five5stars',
-    description:
-      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.',
+    description: `An advertisement website for event merchandising. Attractive company image. Intuitive for customers and stakeholders. `,
     image: stars_header,
     image2: stars_section,
   },
   {
     id: 4,
-    title: 'Flower',
-    label: 'Flower',
-    description:
-      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.',
+    title: 'Personal Websites',
+    label: 'Petal FF Flowers',
+    description: `Responsive personal websites for your business. Varried templates that feature the meaning of your image.`,
     image: flower_header,
     image2: flower_offer,
   },

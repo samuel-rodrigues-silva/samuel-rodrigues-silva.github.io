@@ -34,11 +34,13 @@
   &__img-container {
     width: 100%;
     height: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
     position: relative;
 
     &__1 {
       @include background;
-      width: 70%;
+      width: 90%;
       height: 90%;
     }
     &__2 {
@@ -61,5 +63,29 @@
 
   &__info {
     flex-grow: 1;
+
+    span {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 3px;
+      color: rgba(255, 255, 255, 0.2);
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .Gallery {
+    flex-direction: column;
+
+    &__img-container {
+    }
+
+    &__info {
+      span {
+        font-size: 18px;
+      }
+    }
   }
 }

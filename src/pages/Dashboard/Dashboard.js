@@ -1,38 +1,23 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import { Outlet, Link, useLocation } from 'react-router-dom';
+
+import brazil48 from '../../common/assets/brazil48.png';
+import usa48 from '../../common/assets/usa48.png';
+
 import './Dashboard.scss';
 
 export const Dashboard = () => {
   const [tab, setTab] = useState('home');
-  let form = useRef();
+  const menu = useRef();
   const location = useLocation();
 
   useEffect(() => {
     setTab(location.pathname);
-    emailjs.init('Tz1b7KPr0Z8KRh52t');
   }, [tab, location]);
 
-  const sendEmail = useCallback(async (e) => {
-    e.preventDefault();
-    await emailjs
-      .sendForm(
-        'service_6cv407i',
-        'template_61cn7nf',
-        form.current,
-        'Tz1b7KPr0Z8KRh52t'
-      )
-      .then(
-        (result) => {
-          console.log(result);
-          console.log('Email successfully sent. Thanks for your contact.');
-        },
-        (error) => {
-          console.log(error.text);
-          alert('Oops! Something went wrong, please try again later.');
-        }
-      );
-  }, []);
+  const handleMenu = useCallback(() => {}, []);
 
   return (
     <div className='Dashboard'>
@@ -40,11 +25,10 @@ export const Dashboard = () => {
         <ul className='Dashboard__menu__list'>
           <div className='Dashboard__menu__list__container'>
             <Link
-              to='/home'
+              to='/'
               className='Dashboard__menu__list__container__item'
               style={{
-                color:
-                  tab === '/home' ? 'var(--warning)' : 'rgba(255,255,255,0.8)',
+                color: tab === '/' ? 'var(--warning)' : 'rgba(255,255,255,0.8)',
               }}
             >
               Home
@@ -79,25 +63,35 @@ export const Dashboard = () => {
             </Link>
           </div>
         </ul>
-        <form ref={form} onSubmit={sendEmail}>
-          <div className='Dashboard__menu__contact'>
-            <label for='contact'>Send me a letter</label>
-            <label>Name</label>
-            <input type='text' name='user_name' />
-            <label>Email</label>
-            <input type='email' name='user_email' />
-            <label>Message</label>
-            <textarea name='message' />
-            <input type='submit' value='Send' />
-            {/* <label for='contact'>Send me a letter</label>
-            <input
-              type='text'
-              name='contact'
-              placeholder=''
-            /> */}
-            <span>Copyright reserved 2023</span>
+        <div className='Dashboard__menu__contact'>
+          <div className='Dashboard__menu__contact__social'>
+            <Link
+              target='_blank'
+              to='https://github.com/samuel-rodrigues-silva'
+              className='Dashboard__menu__contact__social__round'
+            >
+              <FiGithub></FiGithub>
+            </Link>
+            <Link
+              target='_blank'
+              to='https://www.linkedin.com/in/samuel-silva-2b5651197/'
+              className='Dashboard__menu__contact__social__round'
+            >
+              <FiLinkedin></FiLinkedin>
+            </Link>
           </div>
-        </form>
+          <span>Copyright reserved 2023</span>
+          <div className='Dashboard__menu__contact__flags'>
+            <div
+              className='Dashboard__menu__contact__flags__round'
+              style={{ backgroundImage: `url(${brazil48})` }}
+            ></div>
+            <div
+              className='Dashboard__menu__contact__flags__round'
+              style={{ backgroundImage: `url(${usa48})` }}
+            ></div>
+          </div>
+        </div>
         <div className='Dashboard__menu__dot-column'>
           {Array(120)
             .fill(0)
@@ -110,6 +104,13 @@ export const Dashboard = () => {
         </div>
       </div>
       <div className='Dashboard__content'>
+        <div
+          className='Dashboard__content__hamb'
+          ref={menu}
+          onClick={handleMenu}
+        >
+          <GiHamburgerMenu></GiHamburgerMenu>
+        </div>
         <Outlet></Outlet>
       </div>
     </div>
