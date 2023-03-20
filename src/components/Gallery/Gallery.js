@@ -1,8 +1,13 @@
 import { Content } from '../Content/Content';
 import './Gallery.scss';
 import { DATA } from '../../common/data/gallery';
+import { useEffect } from 'react';
+import { trigerAnimation } from '../../common/util';
 
 export const Gallery = () => {
+  useEffect(() => {
+    trigerAnimation('.Gallery__info');
+  }, []);
   return (
     <Content>
       {DATA.map((data) => (

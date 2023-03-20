@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { DATA } from '../../common/data/home';
+import { trigerAnimation } from '../../common/util';
 import { Content } from '../Content/Content';
 import './Home.scss';
 
@@ -11,19 +12,7 @@ export const Home = () => {
       setWidth(window.innerWidth);
     });
 
-    const startAnimation = (entries, _) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle('appear', entry.isIntersecting);
-      });
-    };
-
-    const observer = new IntersectionObserver(startAnimation);
-    const options = { root: null, rootMargin: '0px', threshold: 1 };
-
-    const elements = document.querySelectorAll('.Card__info');
-    elements.forEach((el) => {
-      observer.observe(el, options);
-    });
+    trigerAnimation('.Card__info');
   }, [width]);
 
   return (

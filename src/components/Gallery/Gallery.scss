@@ -1,9 +1,23 @@
 @keyframes skew1 {
-  0% {
-    transform: skew(0deg, 0deg);
+  from,
+  to {
+    animation-timing-function: ease-in;
+    box-shadow: 0 0 0 hsl(0, 0%, 80%), 0.1rem 0 0 hsl(0, 0%, 100%),
+      -0.2rem 0 0.75rem 0 hsla(0, 0%, 0%, 0.3);
+    transform: rotateY(-20deg);
   }
-  100% {
-    transform: skew(5deg, 5deg);
+  25%,
+  75% {
+    animation-timing-function: ease-out;
+    box-shadow: 0 0 0 hsl(0, 0%, 80%), 0 0 0 hsl(0, 0%, 100%),
+      -0.25rem -0.05rem 1rem 0.15rem hsla(0, 0%, 0%, 0.3);
+    transform: rotateY(0deg);
+  }
+  50% {
+    animation-timing-function: ease-in;
+    box-shadow: -0.1rem 0 0 hsl(0, 0%, 80%), 0 0 0 hsl(0, 0%, 100%),
+      -0.3rem -0.1rem 1.5rem 0.3rem hsla(0, 0%, 0%, 0.3);
+    transform: rotateY(20deg);
   }
 }
 
@@ -54,7 +68,7 @@
     }
 
     &__1:hover {
-      animation: skew1 1s ease forwards;
+      animation: skew1 2s ease forwards;
     }
     &__2:hover {
       animation: skew2 1s ease forwards;
