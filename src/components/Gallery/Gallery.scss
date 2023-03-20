@@ -34,7 +34,7 @@
     transform: translateX(200px);
   }
   100% {
-    transform: translateX(170px);
+    transform: translateX(100px);
   }
 }
 
@@ -100,10 +100,12 @@
 @media (max-width: 820px) {
   .Gallery {
     flex-direction: column;
+    overflow-x: hidden;
 
     &__img-container {
       &__2:hover {
         animation: slideLeft 1s ease forwards;
+        overflow-x: hidden;
       }
     }
 

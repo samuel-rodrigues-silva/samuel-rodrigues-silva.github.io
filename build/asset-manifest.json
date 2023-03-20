@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.03987ea4.css",
+    "main.css": "/static/css/main.02d0ba7e.css",
     "main.js": "/static/js/main.ce45a752.js",
     "static/js/787.fdb3145b.chunk.js": "/static/js/787.fdb3145b.chunk.js",
     "static/media/flower_offer.png": "/static/media/flower_offer.254a01b88dd3c7c9d571.png",
@@ -19,12 +19,12 @@
     "static/media/ngrx.svg": "/static/media/ngrx.935250522bfcbc538ee0668914660eba.svg",
     "static/media/redux.svg": "/static/media/redux.9193f87d9fb1a83636f0b1bc5924b361.svg",
     "static/media/flutter.svg": "/static/media/flutter.37714be1d821c702368c08604cd38fc4.svg",
-    "main.03987ea4.css.map": "/static/css/main.03987ea4.css.map",
+    "main.02d0ba7e.css.map": "/static/css/main.02d0ba7e.css.map",
     "main.ce45a752.js.map": "/static/js/main.ce45a752.js.map",
     "787.fdb3145b.chunk.js.map": "/static/js/787.fdb3145b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03987ea4.css",
+    "static/css/main.02d0ba7e.css",
     "static/js/main.ce45a752.js"
   ]
 }
